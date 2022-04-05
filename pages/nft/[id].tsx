@@ -22,9 +22,9 @@ function NFTDropPage({ collection }: Props) {
       {/* Left */}
       <div className="lg:col-span-4 bg-gradient-to-br from-cyan-800 to-rose-500">
         <div className="flex flex-col items-center justify-center py-2 lg:min-h-screen">
-          <div className="bg-gradient-to-br from-yellow-400 to-purple-500 p-1 rounded-xl">
+          <div className="bg-white p-1 rounded-xl">
             <img 
-              className="w-44 object-cover rounded-xl lg:h-96 lg:w-72"
+              className="w-44 object-cover rounded-xl lg:h-72 lg:w-72"
               src={urlFor(collection.previewImage).url()} alt="" />
           </div>
           <div className="text-center p-5 space-y-2">
@@ -39,7 +39,7 @@ function NFTDropPage({ collection }: Props) {
         {/* Header */}
         <header className="flex items-center justify-between">
           <Link href={'/'}>
-            <h1 className="w-52 cursor-pointer text-xl font-extralight sm:w-80">The <span className="font-extrabold underline decoration-pink-600/50">PAPAFAM</span> NFT Market Place</h1>
+          <h1 className="cursor-pointer text-2xl font-extralight">Enseñando <span className="font-extrabold underline decoration-pink-600/50">GANÁ</span> con Córdoba Bitcoin</h1>
           </Link>
           <button onClick={() => (address ? disconnect() : connectWithMetamask())} className="rounded-full bg-rose-400 text-white px-4 py-2 text-xs font-bold lg:px-5 lg:py-3 lg:text-base">
             {address ? 'Sing Out' : 'Sing In'}
@@ -47,7 +47,7 @@ function NFTDropPage({ collection }: Props) {
         </header>
 
         <hr className="my-2 border"/>
-        {address && <p className="text-center text-sm text-rose-400 mt-2">You are logged in with wallet {address.substring(0,5)}...{address.substring(address.length - 5)}</p>}
+        {address && <p className="text-center text-sm text-rose-400 mt-2">Estas logeado con la wallet: {address.substring(0,5)}...{address.substring(address.length - 5)}</p>}
         {/* Content */}
         <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:space-y-0">
           <img className="w-80 h-80 object-cover pb-10 lg:h-full" src={urlFor(collection.mainImage).url()} alt="" />
@@ -56,12 +56,12 @@ function NFTDropPage({ collection }: Props) {
             {collection.title}
           </h1>
           
-          <p className="pt-2 text-xl text-green-500">13 / 21</p>
+          <p className="pt-2 text-xl text-green-500">A 53 alumnos les encantó tu curso!</p>
         </div>
 
         {/* Mint button */}
         <button className="h-16 bg-red-600 text-white w-full rounded-full mt-10 cursor-pointer font-bold">
-          MINT NFT (0.01 ETH)
+          Reclamar mi recompensa (0.1 ETH)
         </button>
       </div>
     </div>

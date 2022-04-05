@@ -14,16 +14,16 @@ const Home = ({ collections }: Props) => {
   return (
     <div className="max-w-7xl mx-auto flex flex-col min-h-screen py-20 px-10 2xl:p-0">
       <Head>
-        <title>NFT</title>
+        <title>Reclama tus tokens</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="mb-10 cursor-pointer text-4xl font-extralight">The <span className="font-extrabold underline decoration-pink-600/50">PAPAFAM</span> NFT Market Place</h1>
+      <h1 className="mb-10 cursor-pointer text-4xl font-extralight">Enseñando <span className="font-extrabold underline decoration-pink-600/50">GANÁ</span> con Córdoba Bitcoin</h1>
 
       <main className='bg-slate-100 p-10 shadow-xl shadow-rose-400/20'>
         <div className='grid space-x-3 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>
           {collections.map(collection => (
-            <Link href={`/nft/${collection.slug.current}`}>
+            <Link key={collection.slug.current} href={`/nft/${collection.slug.current}`}>
               <div className='flex flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105'>
                 <img className='h-96 w-60 object-cover rounded-2xl ' src={urlFor(collection.mainImage).url()} alt="" />
                 <div className='p-5'>

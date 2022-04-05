@@ -6,7 +6,6 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      descriptiom: 'Enter the title of the NFT drop',
       type: 'string',
     },
     {
@@ -15,13 +14,14 @@ export default {
       type: 'string',
     },
     {
-      name: 'nftCollectionName',
-      title: 'Name of NFT Collection',
+      name: 'NFTCollectionName',
+      title: 'Name of NFT Course',
       type: 'string',
     },
     {
       name: 'address',
-      title: 'Address',
+      title: 'Address del docente',
+      description: 'Así podremos saber a donde depositar las recompensas',
       type: 'string',
     },
     {
@@ -35,7 +35,7 @@ export default {
     },
     {
       name: 'creator',
-      title: 'Creator',
+      title: 'Docente',
       type: 'reference',
       to: {type: 'creator'},
     },
