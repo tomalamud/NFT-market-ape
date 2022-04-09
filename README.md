@@ -5,7 +5,7 @@
 Just clone this repo and run it on the sonny branch:
 
 ```bash
-git clone this_repo_url
+git clone https://github.com/tomielizondo/NFT-market-ape.git
 git checkout sonny
 npm install
 npm run dev
