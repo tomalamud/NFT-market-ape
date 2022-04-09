@@ -19,6 +19,7 @@ export interface Collection {
   _id: string;
   title: string;
   nftCollectionName: string;
+  description: string;
   address: string;
   slug: {
     current: string;
