@@ -7,6 +7,7 @@ Just clone this repo and run it on the sonny branch:
 ```bash
 git clone this_repo_url
 git checkout sonny
+npm install
 npm run dev
 ```
 That's all!
